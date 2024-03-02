@@ -4,17 +4,17 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running build automation'
-                echo 'Build \success'
+                echo 'Build success'
             }
         stage('test') {
             steps {
                 echo 'Running test automation'
-                echo 'test \success'
+                echo 'test success'
             }
         stage('deploy') {
             steps {
                 echo 'Running deploy automation'
-                echo 'deploy \success'
+                echo 'deploy success'
             }
           
         }
