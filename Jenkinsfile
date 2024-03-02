@@ -1,10 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('checkout') {
             steps {
-                echo 'Running build automation'
-                echo 'Build success'
+                'checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/rajesh212192/JavaWebCalculator.git']])
             }
             }
         stage('test') {
